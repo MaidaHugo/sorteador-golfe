@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taco Sorteado</title>
+  </head>
+  <body>
+    <h1>Taco Sorteado</h1>
+    <p>Taco: <span th:text="${tacoSorteado}"></span></p>
+    <p>Alvo: <span th:text="${alvoSorteado}"></span></p>
+    <form method="post" action="/sortearAlvo">
+      <button type="submit">Sortear</button>
+    </form>
+  </body>
+</html>
